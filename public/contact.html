@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/tailwind.output.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home - Accessibility Forward</title>
+  </head>
+  <body>
+    <header class="text-gray-600 body-font" tabindex="-1">
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <a href="index.html" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 px-3">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg> -->
+          <span class="ml-3 text-xl">Accessibility Forward</span>
+        </a>
+        <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+          <a class="mr-5 text-black hover:text-gray-900 px-3" href="about.html">About</a>
+          <!-- <a class="mr-5 hover:text-gray-900" href="#">Second Link</a> -->
+        </nav>
+      </div>
+    </header>
+        
+    <section class="text-gray-600 body-font relative">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-12">
+            <h1 class="sm:text-5xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Me</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-lg">I'm open to discussing large or small projects.</p>
+            </div>
+            <div class="md:w-3/4 mx-auto">
+                <form class="group bg-white shadow-lg rounded-md p-5 -m-2"
+                        name="contact"
+                        method="POST"
+                        netlify-honeypot="bot-field"
+                        data-netlify="true"
+                        id="contact"
+                        novalidate
+                    >
+                    <p class="hidden">
+                        <label>
+                        Don’t fill this out if you’re human: <input name="bot-field" type="text" />
+                        </label>
+                    </p>
+                    <div class="p-4">
+                        <!-- <div class="relative">
+                            <label for="name" class="leading-10 text-base text-gray-800">Name</label>
+                            <input type="text" id="name" name="name" aria-required="true" aria-describedby="error-message--name" class="w-full bg-gray-50 rounded border border-gray-400 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500" data-ddg-inputtype="identities.fullName">
+                            <span id="error-message--name" class="error-message mt-2 hidden text-sm text-red-500" role="alert"></span>
+                        </div> -->
+                        <div>
+                        <label for="name" class="block font-medium">Name</label>
+                        <input type="text" id="name" name="name" aria-required="true"
+                                class="w-full border rounded p-2" />
+                        <span id="error-message--name" class="text-red-600 text-sm" aria-live="polite"></span>
+                        </div>                        
+                    </div>
+                    <div class="p-4">
+                        <div>
+                            <label for="email" class="block font-medium">Email</label>
+                            <input type="email" id="email" name="email" aria-required="true"
+                                    class="w-full border rounded p-2" />
+                            <span id="error-message--email" class="text-red-600 text-sm" aria-live="polite"></span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div>
+                        <label for="message" class="block font-medium">Message</label>
+                        <textarea id="message" name="message" aria-required="true"
+                                    class="w-full border rounded p-2"></textarea>
+                        <span id="error-message--message" class="text-red-600 text-sm" aria-live="polite"></span>
+                        </div>
+                    </div>
+                    <div class="p-2 w-full">
+                    <button type="submit" id="submitButton" class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 hover:bg-indigo-600 rounded text-lg">Button</button>
+                    </div>
+                </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-indigo-100 text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+        <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+          <a class="flex title-font font-medium items-center md:justify-start text-gray-900" href="#">
+            <span class="text-xl">Accessibility Forward</span>
+          </a>
+          <p class="mt-2 text-sm text-gray-800">Accessibility that works for people — and your business.</p>
+        </div>
+        <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+          <div class="lg:w-1/2 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Social</h2>
+            <nav class="list-none mb-10">
+              <ul role="list">
+                <li role="listitem">
+                  <a href="https://www.linkedin.com/in/danielcbivins/" class="text-gray-600 hover:text-gray-800">LinkedIn</a>
+                </li>
+                <li role="listitem">
+                  <a href="https://github.com/danbivins/" class="text-gray-600 hover:text-gray-800">Github</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="lg:w-1/2 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Small Print</h2>
+            <nav class="list-none mb-10">
+              <ul role="list">
+                <li role="listitem">
+                  <a class="text-gray-600 hover:text-gray-800">Accessibility Statement</a>
+                </li>
+              </ul>
+            </nav>
+          </div>        
+          
+        </div>
+      </div>
+      <div class="bg-gray-100">
+        <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+          <p class="text-gray-500 text-sm text-center sm:text-left">© 2025 Accessibility Forward
+          </p>
+        </div>
+      </div>
+
+    </footer>
+    <script src="./js/custom.js"></script> 
+
+</body>
+</html>

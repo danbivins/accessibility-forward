@@ -1,0 +1,64 @@
+body {
+    background: #faf9f8;
+}
+
+button {
+  /* for browsers that support native offset without custom outline */
+  outline-offset: 4px;
+}
+
+button:focus {
+  position: relative;
+}
+
+button:focus::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  outline: 8px auto -webkit-focus-ring-color;
+}
+
+.card {
+    background: white;
+    width: 31.1%;
+}
+
+@media only screen and (max-width: 960px) {
+    .card {
+        margin: 1rem auto;
+        width: 45%;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    .card {
+        margin: 1rem auto;
+        width: 90%;
+    }
+
+}
+
+.card:not(:last-of-type) {
+    margin-right: 1.5rem;
+}
+
+.error-message{
+  color: red;
+  background-color: #f4f2f2;
+  border-left: 3px solid #fc6a6a;
+  padding: 10px;
+  position: relative;
+  top: 15px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.work-highlights {
+    list-style-type: disc;
+    
+}
