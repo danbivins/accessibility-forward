@@ -21,6 +21,10 @@ button:focus::after {
   outline: 8px auto -webkit-focus-ring-color;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 .card {
     background: white;
     width: 31.1%;
