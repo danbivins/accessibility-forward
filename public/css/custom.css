@@ -66,3 +66,7 @@ a:hover {
     list-style-type: disc;
     
 }
+
+.footer-links a {
+    text-decoration: underline;
+}
