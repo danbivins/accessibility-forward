@@ -70,3 +70,7 @@ a:hover {
 .footer-links a {
     text-decoration: underline;
 }
+
+.results-thumb {
+    max-width: 400px;
+}
